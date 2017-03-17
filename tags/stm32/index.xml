@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stm32 on Brightened</title>
+    <link>https://www.brightened.ir/tags/stm32/index.xml</link>
+    <description>Recent content in Stm32 on Brightened</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2017. All rights reserved.</copyright>
+    <atom:link href="https://www.brightened.ir/tags/stm32/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Deploy STM32 on QtCreator</title>
+      <link>https://www.brightened.ir/post/deploy-stm32-on-qtcreator/</link>
+      <pubDate>Fri, 17 Mar 2017 11:39:59 +0330</pubDate>
+      
+      <guid>https://www.brightened.ir/post/deploy-stm32-on-qtcreator/</guid>
+      <description>
+
+&lt;p&gt;Although there are variety number of pre-configured IDEs available to be used to deploy and develop STM32 applications, you can still configure and use your own tools if you desire. In this post I will show you how to configure and run an integrated development environment based on &lt;strong&gt;GCC&lt;/strong&gt;, &lt;strong&gt;OpenOCD&lt;/strong&gt;, &lt;strong&gt;Qtcreator&lt;/strong&gt;, &lt;strong&gt;STM32CubeMX&lt;/strong&gt; and a &lt;strong&gt;script&lt;/strong&gt; used to generate makefile.&lt;/p&gt;
+
+&lt;h3 id=&#34;prepare-requirements&#34;&gt;Prepare requirements&lt;/h3&gt;
+
+&lt;p&gt;Before going any further, you must install applications mentioned above.
+So use internal package manager of your Linux distrobution to install &lt;strong&gt;arm-none-eabi toolchain (gcc,gdb,newlib)&lt;/strong&gt; and &lt;strong&gt;OpenOCD&lt;/strong&gt; and also &lt;strong&gt;QtCreator&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Then download &lt;a href=&#34;http://www.st.com/en/development-tools/stm32cubemx.html&#34;&gt;STM32CubeMX&lt;/a&gt; and install required libraries of your microcontroller (which CubeMX will guide you through that when necessary ).&lt;/p&gt;
+
+&lt;p&gt;Also download &lt;a href=&#34;https://github.com/baoshi/CubeMX2Makefile&#34;&gt;this script&lt;/a&gt; which we will use to generate makefile based on created projects using CubeMX.&lt;/p&gt;
+
+&lt;h3 id=&#34;setting-up-qtcreator-for-stm32-development&#34;&gt;Setting Up QtCreator for STM32 development&lt;/h3&gt;
+
+&lt;p&gt;Watch this video. It will guide you through this process.&lt;/p&gt;
+
+&lt;iframe width=&#34;700&#34; height=&#34;400&#34; src=&#34;https://www.youtube.com/embed/T5ZR9IXR0Xs&#34;&gt;&lt;/iframe&gt; 
+
+&lt;h4 id=&#34;if-your-board-is-not-listed-in-the-target-scripts&#34;&gt;If your board is not listed in the target scripts&lt;/h4&gt;
+
+&lt;p&gt;When configuring OpenOCD at Options &amp;gt; Devices &amp;gt; Bare Metal, select your programmer interface .cfg for &lt;strong&gt;Configuration file&lt;/strong&gt; field, like mine is stlink-v2.1&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/usr/share/openocd/scripts/interface/stlink-v2-1.cfg
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then inside &lt;strong&gt;Additional argguments&lt;/strong&gt; field, enter &lt;code&gt;-f&lt;/code&gt; followed by your microcontroller configuration from target directory, like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;-f /usr/share/openocd/scripts/target/stm32f4x.cfg
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;an-example-of-usage&#34;&gt;An example of usage&lt;/h3&gt;
+
+&lt;p&gt;In this video we are going to debug and read values of a array. Our board NucleoF411RE is connected to the computer.&lt;/p&gt;
+
+&lt;iframe width=&#34;700&#34; height=&#34;400&#34; src=&#34;https://www.youtube.com/embed/T5ZR9IXR0Xs&#34;&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
