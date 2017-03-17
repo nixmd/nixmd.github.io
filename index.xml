@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Brightened</title>
-    <link>https://www.brightened.ir/index.xml</link>
+    <link>http://www.brightened.ir/index.xml</link>
     <description>Recent content on Brightened</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>&amp;copy; 2017. All rights reserved.</copyright>
     <lastBuildDate>Fri, 17 Mar 2017 11:39:59 +0330</lastBuildDate>
-    <atom:link href="https://www.brightened.ir/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.brightened.ir/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Deploy STM32 on QtCreator</title>
-      <link>https://www.brightened.ir/post/deploy-stm32-on-qtcreator/</link>
+      <link>http://www.brightened.ir/post/deploy-stm32-on-qtcreator/</link>
       <pubDate>Fri, 17 Mar 2017 11:39:59 +0330</pubDate>
       
-      <guid>https://www.brightened.ir/post/deploy-stm32-on-qtcreator/</guid>
+      <guid>http://www.brightened.ir/post/deploy-stm32-on-qtcreator/</guid>
       <description>
 
 &lt;p&gt;Although there are variety number of pre-configured IDEs available to be used to deploy and develop STM32 applications, you can still configure and use your own tools if you desire. In this post I will show you how to configure and run an integrated development environment based on &lt;strong&gt;GCC&lt;/strong&gt;, &lt;strong&gt;OpenOCD&lt;/strong&gt;, &lt;strong&gt;Qtcreator&lt;/strong&gt;, &lt;strong&gt;STM32CubeMX&lt;/strong&gt; and a &lt;strong&gt;script&lt;/strong&gt; used to generate makefile.&lt;/p&gt;
